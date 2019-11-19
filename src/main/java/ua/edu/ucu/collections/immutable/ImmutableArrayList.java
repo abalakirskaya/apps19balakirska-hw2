@@ -50,7 +50,7 @@ public class ImmutableArrayList implements ImmutableList{
     }
 
     @Override
-    public ImmutableList add(Object n){
+    public ImmutableArrayList add(Object n){
         Object[] array = new Object[1];
         array[0] = n;
         return this.addAll(array);
@@ -64,13 +64,13 @@ public class ImmutableArrayList implements ImmutableList{
     }
 
     @Override
-    public ImmutableList addAll(Object[] n){
+    public ImmutableArrayList addAll(Object[] n){
 //        ImmutableArrayList result = new ImmutableArrayList(this.size + n.length);
         return addAll(size, n);
     }
 
     @Override
-    public ImmutableList addAll(int i, Object[] n){
+    public ImmutableArrayList addAll(int i, Object[] n){
         int len;
         int first;
         int last;

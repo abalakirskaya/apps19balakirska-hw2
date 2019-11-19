@@ -5,6 +5,12 @@ final class Node  {
     public Node next;
     public Node prev;
 
+    public Node(){
+        key = null;
+        next = null;
+        prev = null;
+    }
+
     public Object getValue() {
         return key;
     }
@@ -22,6 +28,7 @@ final class Node  {
     }
 
     public Node getPrevious() {
+
         return prev;
     }
 
@@ -39,4 +46,5 @@ final class Node  {
         next = node.next;
         prev = node.prev;
     }
+
 }
